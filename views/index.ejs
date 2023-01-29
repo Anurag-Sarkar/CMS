@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/stylesheets/css/rainbow.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="/javascripts/rainbow-custom.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="choose">
+      <button id="done">Link</button>
+      <form method="post" action="/addimg" id="addimg" enctype="multipart/form-data">
+        <input type="file" name="img" id="file">
+      </form>
+      <label for="file">Open File</label>
+    </div>
+
+    <div id="choose2">
+      <button id="done2">Link</button>
+      <form method="post" action="/addimg" id="addimg2" enctype="multipart/form-data">
+        <input type="file" name="img" id="file2">
+      </form>
+      <label for="file2">Open File</label>
+    </div>
+    <div id="nav"> 
+      Shery CMS
+      <div id="opt">
+        <button id = "bold"><i  class="ri-bold"></i></button>
+        <button id = "italic"><i  class="ri-italic"></i></button>
+        <button id = "remove"><i class="ri-eraser-line"></i></button>
+        <button id = "insertUnorderedList"><i  class="ri-list-unordered"></i></button>
+        <button id = "insertOrderedList"><i  class="ri-list-ordered"></i></button>
+        <button id = "heading1"><i class="ri-h-1"></i></button>
+        <button id = "heading2"><i class="ri-h-2"></i></button>
+        <button id = "heading3"><i class="ri-h-3"></i></button>
+        <button id = "insertParagraph"><i class="ri-parking-line"></i></button>
+        <button id = "blockquote"><i class="ri-double-quotes-l"></i></button>
+        <button id = "createLink"><i class="ri-link"></i></button>
+        <button id = "unlink"><i class="ri-link-unlink-m"></i></button>
+        <button id = "img"><i class="ri-image-add-line"></i></button>
+        <button id = "formatColor"><i class="ri-brush-3-fill"></i></button>
+        <input type="color" id="colorr">
+    </div>
+    <button id="save">Save</button>
+  </div>
+    <div id="editor"> 
+    <%-data%>      
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/javascripts/script.js"></script>
+</body>
+
+</html>
